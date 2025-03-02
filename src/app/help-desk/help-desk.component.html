@@ -1,0 +1,41 @@
+<div class="help-desk-container">
+  <h2>Help Desk</h2>
+  <form [formGroup]="helpDeskForm" (ngSubmit)="onSubmit()">
+    
+    <div class="form-row">
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" id="name" formControlName="name" class="form-input" />
+
+      <label for="prnNo" class="form-label">PRN No.:</label>
+      <input type="text" id="prnNo" formControlName="prnNo" class="form-input" />
+    </div>
+
+    <div class="form-row">
+      <label for="department" class="form-label">Department:</label>
+      <select id="department" formControlName="department" class="form-input">
+        <option *ngFor="let dept of ['CS', 'IT', 'ECE', 'MECH']" [value]="dept">
+          {{ dept }}
+        </option>
+      </select>
+
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" id="email" formControlName="email" class="form-input" />
+    </div>
+
+    <div class="form-row">
+      <label for="title" class="form-label">Title of Enquiry:</label>
+      <input type="text" id="title" formControlName="title" class="form-input full-width" />
+    </div>
+
+    <div class="form-row">
+      <label for="description" class="form-label">Description:</label>
+      <textarea id="description" formControlName="description" rows="5" class="form-input full-width"></textarea>
+    </div>
+
+    <div class="button-group">
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+      <button mat-button type="button" (click)="onCancel()">Cancel</button>
+    </div>
+
+  </form>
+</div>

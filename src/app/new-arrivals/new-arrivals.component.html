@@ -1,0 +1,23 @@
+<div class="new-arrivals-container">
+  <h2 class="new-arrivals-title">New Arrivals</h2>
+
+  <div class="carousel-wrapper">
+    <button class="carousel-btn left" (click)="scrollLeft()" [disabled]="currentIndex === 0">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+
+    <div class="carousel-container">
+      <div class="carousel" #carousel>
+        <div class="book-card" *ngFor="let book of books">
+          <img [src]="book.image" alt="Book Cover">
+          <p class="book-title">{{ book.title }}</p>
+          <p class="book-author">{{ book.author }}</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-btn right" (click)="scrollRight()" [disabled]="currentIndex >= books.length - visibleItems">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </div>
+</div>

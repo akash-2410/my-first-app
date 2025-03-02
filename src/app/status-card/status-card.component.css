@@ -1,0 +1,53 @@
+.status-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 15px; /* Increased gap for better spacing */
+  width: 255px; /* Increased width */
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.status-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.status-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.status-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+}
+
+.status-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-left: 10px; 
+  margin-bottom: 8px; 
+}
+
+.status-count {
+  font-size: 22px; 
+  font-weight: bold;
+  color: #4a148c;
+  margin-left: 10px;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 20px;
+  color: #777;
+}

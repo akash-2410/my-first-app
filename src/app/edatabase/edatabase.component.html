@@ -1,0 +1,11 @@
+<div class="collection-container">
+  <h2 class="collection-title">E-Books(Database)</h2>
+  <div class="database-grid">
+    <div class="collection-card" *ngFor="let database of databases">
+      <img [src]="database.iconSrc" alt="{{ database.title }}" class="database-icon" />
+      <div class="database-info">
+        <h3>{{ database.title }}</h3>
+      </div>
+    </div>
+  </div>
+</div>

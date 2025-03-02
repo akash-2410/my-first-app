@@ -1,0 +1,12 @@
+<div class="collection-wrapper">
+  <h2 class="collection-title">Collection</h2>
+  
+  <div class="collection-container">
+    <div class="collection-card" *ngFor="let book of books">
+      <img [src]="book.iconSrc" alt="{{ book.title }}" class="book-icon" />
+      <div class="book-info">
+        <h3>{{ book.title }}</h3>
+      </div>
+    </div>
+  </div>
+</div>

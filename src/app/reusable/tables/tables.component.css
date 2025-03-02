@@ -1,0 +1,65 @@
+.table-container {
+
+  padding: 80px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.table-title {
+  font-size: 24px;
+  font-weight:500;
+  color: #3c1053; 
+  margin-bottom: 15px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: fixed; 
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 20px; 
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.custom-table th {
+  font-weight: 500;
+  color: #3c1053; 
+  text-align: left;
+}
+
+.book-image {
+  width: 60px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.total-fine {
+  color: red;
+  font-weight: bold;
+}
+
+.pay-now-btn {
+  background-color: #5a189a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  display: block; /* Fixes button alignment */
+  text-align: center;
+}
+
+.pay-now-btn:hover {
+  background-color: #3c1053;
+}

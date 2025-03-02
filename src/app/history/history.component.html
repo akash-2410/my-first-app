@@ -1,0 +1,12 @@
+<div class="history-container">
+  <h2>History</h2>
+
+  <!-- Filter Input -->
+  <mat-form-field appearance="outline" class="filter-input">
+    <mat-label>Search</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Search history...">
+  </mat-form-field>
+
+  <!-- Reusing Overdue Items Table Component -->
+  <app-overdue-items [data]="historyData" [pageSize]="7"></app-overdue-items>
+</div>

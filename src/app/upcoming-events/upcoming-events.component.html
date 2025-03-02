@@ -1,0 +1,22 @@
+<div class="upcoming-events">
+  <h3 class="section-title">Upcoming Events</h3>
+  <div class="event-list">
+    <div 
+      class="event-card" 
+      *ngFor="let event of events" 
+      [style.border-left]="'5px solid ' + event.color"
+      [style.background-color]="event.lightColor"
+    >
+      <div class="event-content">
+        <div class="event-header">
+          <span class="event-title">{{ event.title }}</span>
+          <span class="event-date">{{ event.date }}</span>
+        </div>
+        <div class="event-details">
+          <span class="event-day">{{ event.day }}</span>
+          <span class="event-time">{{ event.time }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
